@@ -46,5 +46,6 @@ jobs:
           asset_path: ./jeepay-manager/target/jeepay-manager.jar
           asset_name: controller-jar
           asset_content_type: application/java-archive
+          
 
           
