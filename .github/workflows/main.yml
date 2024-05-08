@@ -65,7 +65,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./jeepay-merchant/target/jeepay-payment.jar
+          asset_path: ./jeepay-payment/target/jeepay-payment.jar
           asset_name: jeepay-payment.jar
           asset_content_type: application/java-archive
 
