@@ -58,4 +58,15 @@ jobs:
           asset_name: jeepay-merchant.jar
           asset_content_type: application/java-archive
 
+      - name: Release JAR payment
+        id: payment
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./jeepay-merchant/target/jeepay-payment.jar
+          asset_name: jeepay-payment.jar
+          asset_content_type: application/java-archive
+
           
